@@ -3,8 +3,8 @@ import pandas as pd
 st.set_page_config(page_title="Retail Sales Explorer", layout="wide")
 st.title("Retail Sales Explorer")
 uploaded_file = st.file_uploader("Upload CSV", type=["csv"])
+
 if uploaded_file is not None:
-  pass
 df = pd.read_csv(uploaded_file)
 
 st.dataframe(df)
